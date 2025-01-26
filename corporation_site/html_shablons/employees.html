@@ -1,0 +1,4 @@
+<h1>Страница с работниками</h1>
+{%for employee in employees_spisok%}
+    <h2><a href="/employee/{{employee.id}}/">{{employee.name}}</a></h2>
+{%endfor%}

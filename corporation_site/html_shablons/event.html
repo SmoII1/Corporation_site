@@ -1,0 +1,10 @@
+<h1>Страница мероприятия {{event.name}}</h1>
+<h2>Колличество гостей {{event.guests}}</h2>
+<h2>Бюджет {{event.budget}}</h3>
+<h2>Описание {{event.description}}</h4>
+<h2>Дата проведения {{event.date}}</h5>
+<h2>Комманды занимающаяся этим мероприятием</h2>
+{%for team in event.teams.all%}
+    <h3>{{team.name}}</h3>
+{%endfor%}
+
